@@ -1,0 +1,25 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\erigq\Documents\code\ai110-module1show-gameglitchinvestigator-starter\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\erigq\Documents\code\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.14.1
+collecting ... collected 16 items
+
+tests/test_game_logic.py::test_check_guess_win_returns_win PASSED        [  6%]
+tests/test_game_logic.py::test_check_guess_too_high_tells_player_to_go_lower PASSED [ 12%]
+tests/test_game_logic.py::test_check_guess_too_low_tells_player_to_go_higher PASSED [ 18%]
+tests/test_game_logic.py::test_check_guess_handles_string_secret PASSED  [ 25%]
+tests/test_game_logic.py::test_wrong_guess_never_rewards_points PASSED   [ 31%]
+tests/test_game_logic.py::test_win_awards_at_least_10_points PASSED      [ 37%]
+tests/test_game_logic.py::test_win_on_attempt_one_awards_full_points PASSED [ 43%]
+tests/test_game_logic.py::test_parse_guess_valid_int PASSED              [ 50%]
+tests/test_game_logic.py::test_parse_guess_decimal_truncates_to_int PASSED [ 56%]
+tests/test_game_logic.py::test_parse_guess_negative_number PASSED        [ 62%]
+tests/test_game_logic.py::test_parse_guess_empty_string_rejected PASSED  [ 68%]
+tests/test_game_logic.py::test_parse_guess_whitespace_only_rejected PASSED [ 75%]
+tests/test_game_logic.py::test_parse_guess_non_numeric_rejected PASSED   [ 81%]
+tests/test_game_logic.py::test_parse_guess_huge_number_accepted PASSED   [ 87%]
+tests/test_game_logic.py::test_parse_guess_none_rejected PASSED          [ 93%]
+tests/test_game_logic.py::test_difficulty_ranges_increase PASSED         [100%]
+
+============================= 16 passed in 0.07s ==============================
